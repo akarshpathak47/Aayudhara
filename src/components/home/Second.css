@@ -1,0 +1,112 @@
+
+.wrapper{
+    
+position: absolute;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   width: 100vw;
+   height: 100vh;
+  align-items: center;
+  z-index: 1;
+
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+.wrapper h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.text{
+  
+    font-style: oblique;
+    font-size: 3em;
+    font-weight: bold;
+    height: 10px;
+    margin-top: 6%;
+   
+    
+}
+
+
+
+
+.second{
+    width: 100%;
+    height: 100vh;
+    
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    
+  
+   
+}
+.text span{
+    color:rgba(255, 0, 0, 0.812);
+}
+.next {
+  background: linear-gradient(90deg, pink, rgba(255, 0, 0, 0.815));
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(79, 140, 255, 0.15);
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 10%;
+
+   
+}
+ 
+.next:hover {
+  background: linear-gradient(90deg, #38e6c5 0%, #4f8cff 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-left: 8px;
+}
+.quotesecond{
+    display: flex;
+   gap: 20px;
+    justify-content: center;
+}
+.button{
+    max-height: fit-content;
+    margin-top: 5%;
+}
+.second h2{
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    
+}
+.quotesecond p{
+    font-size: 2em;
+   font-style: oblique;
+    margin-top: 7%;
+   
+    
+}
+.second span{
+    color:rgba(255, 0, 0, 0.53);
+}
+.button span{
+    color:white;
+}
