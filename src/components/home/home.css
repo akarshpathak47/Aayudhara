@@ -1,0 +1,38 @@
+/*.App-header {
+  background-color: #39455e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.blood{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+.Next{
+ background-color: cadetblue;
+  width: 20%;
+ border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+*/
