@@ -1,0 +1,280 @@
+/* Register.css - Modern & Attractive Redesign */
+
+:root {
+  --primary-color: #d63384; /* Deep Rose/Maroon for Blood/Life */
+  --secondary-color: #28a745; /* Success/Go green */
+  --accent-color: #ffc107; /* Warning/Resend yellow */
+  --background-light: #fbe6ec; /* Very light pink background */
+  --text-dark: #333;
+  --text-medium: #666;
+  --input-border: #ddd;
+  --focus-shadow: rgba(214, 51, 132, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--background-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.form-container {
+  background: #fff;
+  padding: 3rem;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  animation: fadeIn 0.8s ease-out;
+  border-top: 5px solid var(--primary-color); /* Subtle header accent */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.form-tagline {
+    text-align: center;
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Increased spacing for breathability */
+}
+
+.form-group {
+    /* Ensures labels and inputs are clearly grouped */
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  display: block;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px; /* Slightly larger padding */
+  font-size: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px; /* Softer corners */
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--focus-shadow);
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* --- Email Verification Section Styling --- */
+
+.email-verification-section {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.action-button {
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+}
+
+.verify-button {
+  background-color: var(--primary-color);
+}
+.verify-button:hover:not(:disabled) {
+  background-color: #a72464; /* Darker primary */
+}
+
+.verification-status {
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.verification-status.success {
+    background: #e6f7ee;
+    color: var(--secondary-color);
+}
+.verification-status .icon {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+.otp-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.otp-input {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.otp-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.verify-otp-button {
+    background-color: var(--secondary-color);
+}
+.verify-otp-button:hover:not(:disabled) {
+    background-color: #1e7e34;
+}
+
+.resend-otp-button {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+}
+.resend-otp-button:hover:not(:disabled) {
+    background-color: #e0a800;
+}
+
+/* --- Gender and Age Grouping --- */
+
+.gender-age-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.gender-wrapper {
+    flex: 2; /* Takes more space */
+}
+
+.age-wrapper {
+    flex: 1; /* Takes less space */
+    min-width: 100px;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  padding: 5px 0;
+  background: #fcfcfc;
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+}
+
+.radio-label {
+    font-weight: 500 !important; /* Overriding form label */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-medium) !important;
+    gap: 5px;
+}
+.radio-label input[type="radio"] {
+    width: auto;
+    margin: 0;
+    accent-color: var(--primary-color);
+}
+
+/* --- Submit Button --- */
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s, opacity 0.3s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #a72464;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(214, 51, 132, 0.2);
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 650px) {
+  .form-container {
+    padding: 2rem 1.5rem;
+    margin-left: 0; /* Remove the old margin */
+  }
+
+  .gender-age-group {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .otp-buttons {
+    flex-direction: column;
+  }
+  
+  .gender-group {
+    flex-wrap: wrap;
+  }
+  
+  .submit-button {
+    font-size: 1.1rem;
+  }
+}

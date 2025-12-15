@@ -1,0 +1,52 @@
+.global-footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: #f7d5e0;
+  color: #333;
+  text-align: center;
+  padding: 0.8rem 1rem;  /* 🔻 Reduced vertical padding */
+  font-size: 0.92rem;
+  border-top: 1px solid #e3b2c3;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.04);
+  z-index: 10;
+  position: relative;
+  margin-top: 0;
+  border-radius: 0;  /* 🔻 No curve, makes it flush */
+  margin-bottom: -20%;
+}
+
+
+
+.global-footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.footer-icons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #d63384;
+}
+
+@media (max-width: 768px) {
+  .global-footer {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  .footer-icons {
+    gap: 0.8rem;
+    font-size: 1.1rem;
+  }
+}
